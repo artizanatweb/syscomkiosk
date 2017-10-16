@@ -1,0 +1,265 @@
+/*
+Author: Daniel Cana
+Github: https://github.com/artizanatweb/
+Web: http://www.artizanatweb.ro
+Email: artizanatweb@gmail.com
+Tel: 0723 846 180
+*/
+/* 
+    Created on : Oct 14, 2017, 9:22:52 PM
+    Author     : daniel
+*/
+
+@font-face {
+    font-family: "CenturyGothicBold";
+    src:    url('../fonts/CenturyGothicBold.woff') format('woff'),
+            url('../fonts/CenturyGothicBold.ttf') format('truetype');
+}
+
+body
+{
+    background-color: #000;
+    color: #fff;
+}
+
+body *
+{
+    color: #fff;
+    font-family: "CenturyGothicBold";
+}
+
+p
+{
+    margin-bottom: 0;
+}
+
+#app-hearder
+{
+    padding-top: 23px;
+    padding-bottom: 29px;
+}
+
+.bigtext,
+.bigtext *
+{
+    font-size: 40px;
+}
+
+.mediumtext,
+.mediumtext *
+{
+    font-size: 30px;
+}
+
+.wsplit
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.button
+{
+    line-height: 56px;
+    width: 456px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.button:hover,
+.button:after,
+.button:checked
+{
+    background-color: #191919;
+}
+
+.button.gray-button
+{
+    border: 2px solid #626262;
+    color: #a8a8a8;
+    border-top: 2px solid #a3a2a3;
+}
+
+.button.red-button
+{
+    border: 2px solid #8e0303;
+    color: #8e0303;
+}
+
+#animation-container
+{
+    display: none;
+}
+
+#cam-support
+{
+    width: 614px;
+    height: 378px;
+    position: relative;
+    z-index: 200;
+    overflow: hidden;
+    background: url('../assets/cam-frame.png') no-repeat 0 0 transparent;
+}
+
+#cam-support video,
+#cam-support img
+{
+    width: 551px;
+    height: 413px;
+    overflow: hidden;
+    position: relative;
+    z-index: 198;
+    left: -30px;
+    top: 0px;
+}
+
+#cam-frame
+{
+    background: url('../assets/cam-frame.png') no-repeat 0 0 transparent;
+    width: 614px;
+    height: 378px;
+    position: relative;
+    z-index: 202;
+    top: -418px;
+    left: 0;
+}
+
+.no-video #cam-frame
+{
+    top: -413px;
+}
+
+#cam-counter
+{
+    width: 149px;
+    height: 149px;
+    background-color: #4d0202;
+    font-size: 80px;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 149px;
+    text-align: center;
+}
+
+.counter-support
+{
+    padding-top: 114px;
+}
+
+#second-screen .row:first-child
+{
+    padding-top: 60px;
+}
+
+.text-button
+{
+    line-height: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.th-buttons
+{
+    padding-top: 60px;
+}
+
+.buttonf
+{
+    line-height: 60px;
+    border: 2px solid #373737;
+    color: #fff;
+    background-color: #373737;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.f-big-button
+{
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.f-small-button
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.f-small-button.smallText
+{
+    text-transform: lowercase;
+}
+
+.f-med-button
+{
+    padding: 0 30px;
+}
+
+#third-screen .custom-text
+{
+    padding-top: 50px;
+}
+
+#third-screen .custom-text p
+{
+    font-size: 44px;
+    line-height: 50px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#email-address
+{
+    width: 492px;
+    line-height: 58px;
+    text-align: center;
+    background-color: #590505;
+    color: #fff;
+    border: 1px solid #7d7d7d;
+}
+
+#sendEmail
+{
+    margin-left: 20px;
+    line-height: 66px;
+}
+
+.email-message
+{
+    padding-top: 30px;
+    padding-bottom: 56px;
+    color: #676767;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.email-message p
+{
+    color: #676767;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.buttonSupport
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.exTextSupport
+{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.exTextSupport p
+{
+    font-size: 26px;
+    font-style: italic;
+}

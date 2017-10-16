@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--
+Author: Daniel Cana
+Github: https://github.com/artizanatweb/
+Web: http://www.artizanatweb.ro
+Email: artizanatweb@gmail.com
+Tel: 0723 846 180
+-->
+<html>
+    <head>
+        <title>Syscom Digital</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            
+            <!-- START Header -->
+            <div id="app-hearder" class="row center-block text-center">
+                <img src="../assets/logo.png" class="img-responsive center-block" />
+            </div>
+            <!-- END Header -->
+            
+            <!-- START Content -->
+            <div id="app-body" class="row center-block text-center">
+                
+                <!-- START Animation Container -->
+                <div id="animation-container" class="col-md-12">
+                    
+                    <!-- START Home Screen -->
+                    <div id="home-screen" class="screen" data-bind="visible: isVisible">
+                        <div class="bigtext">
+                            <p class="text-uppercase text-center">
+                                maecenas bibendum
+                            </p>
+                        </div>
+                        <div class="wsplit">
+                            <img src="../assets/home-small-split.png" class="img-responsive center-block" />
+                        </div>
+                        <div class="mediumtext">
+                            <p class="text-uppercase">duis efficitur</p>
+                            <p class="text-uppercase">nos in sagittis iaculis</p>
+                        </div>
+                        <div class="buttonSupport">
+                            <button class="button red-button" id="startPoza">start poza</button>
+                        </div>
+                        <div class="">
+                            <img src="../assets/home-big-split.png" class="img-responsive center-block" />
+                        </div>
+                        <div class="exTextSupport">
+                            <p>Experimentează</p>
+                            <p>dimensiunile perfecțiunii!</p>
+                        </div>
+                        <div class="buttonSupport">
+                            <button class="button gray-button" id="showGallery">vezi galeria</button>
+                        </div>
+                    </div>
+                    <!-- END Home Screen -->
+                    
+                    <!-- START Second Screen -->
+                    <div id="second-screen" class="screen row" data-bind="visible: isVisible">
+                        <div class="col-md-12 row">
+                            <div class="col-md-6 text-right">
+                                <div id="cam-support">
+                                    <video id="liveVideo" class="liveVideo" autoplay=""></video>
+                                    <div id="cam-frame"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-left counter-support">
+                                <div id="cam-counter" data-bind="text: counter" class="center-block"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Second Screen -->
+                    
+                    <!-- START Third Screen -->
+                    <div id="third-screen" class="screen row" data-bind="visible: isVisible">
+                        <div class="col-md-12 row">
+                            <div class="col-md-6 text-right">
+                                <div class="text-left">
+                                    <a href="#" id="backToHome" class="text-button">< prima pagina</a>
+                                </div>
+                                <div id="cam-support" class="no-video">
+                                    <img src="" id="cam-photo" />
+                                    <div id="cam-frame"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-left text-center">
+                                <div class="th-buttons">
+                                    <button id="sendPhoto" class="buttonf f-big-button">trimite poza</button>
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <button id="backToSecond" class="buttonf f-small-button smallText">reincearca / poza noua</button>
+                                </div>
+                                <div class="custom-text">
+                                    <p>Maecenas</p>
+                                    <p>enim tortor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row hidden">
+                            <canvas id="photo-canvas"></canvas>
+                        </div>
+                    </div>
+                    <!-- END Third Screen -->
+                    
+                    <!-- START Fourth Screen -->
+                    <div id="fourth-screen" class="screen" data-bind="visible: isVisible">
+                        <div class="col-md-12 row">
+                            <div class="col-md-4">
+                                <div class="text-left">
+                                    <a href="#" id="backToHomeFour" class="text-button">< prima pagina</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <img src="../assets/dots.png" class="img-responsive center-block" />
+                            </div>
+                            <div class="col-md-4 text-center"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-12 row email-message">
+                            <p class="text-center">
+                                Completează adresa ta de email
+                            </p>
+                            <p class="text-center">
+                                și vei primi pe email un link catre imagine
+                            </p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-12 row">
+                            <div class="clearfix"></div>
+                            <div class="support-form center-block">
+                                <div class="clearfix"></div>
+                                <input type="text" data-bind="value: emailAddress" id="email-address" />
+                                <button id="sendEmail" class="buttonf f-med-button" type="button">trimite</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Fourth Screen -->
+                    
+                    <!-- START Fifth Screen -->
+                    <div id="fifth-screen" class="screen" data-bind="visible: isVisible">
+                        <div class="col-md-12 row">
+                            <div class="col-md-4">
+                                <div class="text-left">
+                                    <a href="#" id="backToHomeFive" class="text-button">< prima pagina</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <img src="../assets/dots.png" class="img-responsive center-block" />
+                            </div>
+                            <div class="col-md-4 text-center"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-12 row email-message">
+                            <p class="text-center">
+                                Email-ul a fost trimis
+                            </p>
+                        </div>
+                    </div>
+                    <!-- END Fifth Screen -->
+                    
+                    <!-- START Gallery Screen -->
+                    <div id="gallery-screen" class="screen" data-bind="visible: isVisible">
+                        <div class="col-md-12 row">
+                            <div class="col-md-4">
+                                <div class="text-left">
+                                    <a href="#" id="backToHomeGallery" class="text-button">< prima pagina</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center"></div>
+                            <div class="col-md-4 text-center"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-12 row">
+                            <h1>Mai am nevoie de timp...</h1>
+                        </div>
+                    </div>
+                    <!-- END Gallery Screen -->
+                    
+                </div>
+                <!-- END Animation Container -->
+                
+            </div>
+            <!-- END Content -->
+            
+        </div>
+        
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
